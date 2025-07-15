@@ -108,7 +108,7 @@ const VirtusLanding = () => {
             <ScrollReveal direction="up" delay={800}>
               <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
                 <div className="card-glass flex items-center px-6 py-4">
-                  <Target className="text-primary mr-4" size={24} />
+                  <Target className="text-white mr-4" size={24} />
                   <span className="text-lg font-semibold text-white">
                     Atuamos com poucos clientes por vez, porque excelência exige foco.
                   </span>
@@ -120,13 +120,13 @@ const VirtusLanding = () => {
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                   <button className="btn-super-primary text-xl px-10 py-5 group">
-                    🔵 Quero escalar com estratégia
+                    Quero escalar com estratégia
                     <ArrowRight className="ml-3 transition-transform group-hover:translate-x-2" size={20} />
                   </button>
                 </a>
                 <button className="btn-glass text-xl px-10 py-5 group">
                   <PlayCircle className="mr-3" size={20} />
-                  ⚪ Entenda nosso processo
+                  Entenda nosso processo
                 </button>
               </div>
             </ScrollReveal>
@@ -148,7 +148,7 @@ const VirtusLanding = () => {
             <ScrollReveal direction="up">
               <div className="text-center mb-20">
                 <div className="inline-flex items-center card-glass px-8 py-4 mb-8">
-                  <Zap className="text-primary mr-4" size={32} />
+                  <Zap className="text-white mr-4" size={32} />
                   <h2 className="text-5xl md:text-6xl font-bold text-gradient">Sobre Nós</h2>
                 </div>
                 
@@ -173,8 +173,8 @@ const VirtusLanding = () => {
               ].map((item, index) => (
                 <ScrollReveal key={index} direction="up" delay={index * 200}>
                   <div className="card-3d text-center group">
-                    <item.icon className="text-primary mx-auto mb-6 group-hover:scale-110 transition-transform" size={48} />
-                    <h3 className="font-bold text-xl mb-3 text-white">📌 {item.title}</h3>
+                    <item.icon className="text-white mx-auto mb-6 group-hover:scale-110 transition-transform" size={48} />
+                    <h3 className="font-bold text-xl mb-3 text-white">{item.title}</h3>
                     <p className="text-gray-300 text-sm">{item.desc}</p>
                   </div>
                 </ScrollReveal>
@@ -184,10 +184,10 @@ const VirtusLanding = () => {
             <ScrollReveal direction="scale">
               <div className="card-glass text-center max-w-2xl mx-auto">
                 <p className="text-xl font-semibold mb-6 text-white">
-                  🚫 Não atendemos em volume.
+                  Não atendemos em volume.
                 </p>
-                <p className="text-2xl font-bold text-gradient">
-                  ✅ Atendemos com profundidade.
+                <p className="text-2xl font-bold text-primary-light">
+                  Atendemos com profundidade.
                 </p>
               </div>
             </ScrollReveal>
@@ -202,7 +202,7 @@ const VirtusLanding = () => {
           <ScrollReveal direction="up">
             <div className="text-center mb-20">
               <h2 className="text-5xl md:text-6xl font-bold mb-8">
-                🛠️ <span className="text-gradient">Serviços de Alta Performance</span>
+                <span className="text-gradient">Serviços de Alta Performance</span>
               </h2>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
                 Soluções integradas. Execução com método. Resultados com consistência.
@@ -214,21 +214,21 @@ const VirtusLanding = () => {
             {[
               {
                 icon: BarChart3,
-                title: "📊 Tráfego Pago Estratégico",
+                title: "Tráfego Pago Estratégico",
                 description: "Campanhas otimizadas no Meta Ads e Google Ads, Youtube Ads, com inteligência de dados, testes estruturados e otimizações de performance.",
                 highlight: "Você não investe por likes. Investe pra vender.",
                 gradient: "from-blue-500 to-cyan-500"
               },
               {
                 icon: Bot,
-                title: "🤖 Funis Automatizados e Conversacionais",
+                title: "Funis Automatizados e Conversacionais",
                 description: "Sua estrutura de vendas online funcionando mesmo fora do horário comercial. Automatizamos seu relacionamento com leads usando lógica, copy e comportamento.",
                 highlight: "Ganho de escala sem perder personalização.",
                 gradient: "from-purple-500 to-pink-500"
               },
               {
                 icon: Video,
-                title: "🎥 Criativos Internos com Foco em Conversão",
+                title: "Criativos Internos com Foco em Conversão",
                 description: "Nada é terceirizado. Produzimos vídeos, imagens e reels com estratégia, baseados nos gatilhos certos e no momento certo do funil.",
                 highlight: "Criativos feitos por quem entende do que converte.",
                 gradient: "from-orange-500 to-red-500"
@@ -267,7 +267,7 @@ const VirtusLanding = () => {
           <ScrollReveal direction="up">
             <div className="text-center mb-20">
               <h2 className="text-5xl md:text-6xl font-bold mb-8">
-                📈 <span className="text-gradient">Nosso Método - As 5 Premissas</span>
+                <span className="text-gradient">Nosso Método - As 5 Premissas</span>
               </h2>
               <p className="text-2xl text-gray-300 mb-4">
                 Da análise profunda à escala. Sem achismos, sem ruído.
@@ -297,7 +297,7 @@ const VirtusLanding = () => {
                     </div>
                     
                     <div className="flex-1 flex items-center">
-                      <step.icon className="text-primary mr-4 group-hover:scale-110 transition-transform" size={32} />
+                      <step.icon className="text-white mr-4 group-hover:scale-110 transition-transform" size={32} />
                       <p className="text-xl font-semibold text-white">{step.text}</p>
                     </div>
                   </div>
@@ -309,7 +309,7 @@ const VirtusLanding = () => {
               <div className="text-center mt-16">
                 <div className="card-glass inline-block px-8 py-6">
                   <p className="text-xl font-bold text-gradient">
-                    🧠 Cada passo tem método. Cada decisão, base.
+                    Cada passo tem método. Cada decisão, base.
                   </p>
                 </div>
               </div>
@@ -325,7 +325,7 @@ const VirtusLanding = () => {
           <ScrollReveal direction="up">
             <div className="text-center mb-20">
               <h2 className="text-5xl md:text-6xl font-bold mb-8">
-                🔥 <span className="text-gradient">Resultados Comprovados</span>
+                <span className="text-gradient">Resultados Comprovados</span>
               </h2>
               <p className="text-2xl text-gray-300">
                 Performance real. Negócios em outro patamar.
@@ -389,17 +389,17 @@ const VirtusLanding = () => {
             <div className="grid lg:grid-cols-3 gap-8">
               {[
                 {
-                  title: "📍 Restaurante Box 49",
+                  title: "Restaurante Box 49",
                   description: "Estratégia local + vídeos autorais = aumento direto nos espaços físicos",
                   highlight: "Crescimento local explosivo"
                 },
                 {
-                  title: "📍 Samarone Distribuidora Barber",
+                  title: "Samarone Distribuidora Barber",
                   description: "Aumento das vendas com leads qualificados no WhatsApp",
                   highlight: "Pipeline de vendas automatizado"
                 },
                 {
-                  title: "📍 Fit Imports",
+                  title: "Fit Imports",
                   description: "ROI triplicado com criativos e copy orientados à ação",
                   highlight: "Performance 3x superior"
                 }
@@ -407,7 +407,7 @@ const VirtusLanding = () => {
                 <ScrollReveal key={index} direction="up" delay={index * 200}>
                   <div className="card-3d group">
                     <div className="mb-4">
-                      <Award className="text-primary group-hover:scale-110 transition-transform" size={32} />
+                      <Award className="text-white group-hover:scale-110 transition-transform" size={32} />
                     </div>
                     <h4 className="font-bold text-xl mb-4 text-white">
                       {caseStudy.title}
@@ -435,7 +435,7 @@ const VirtusLanding = () => {
           <ScrollReveal direction="up">
             <div className="text-center mb-20">
               <h2 className="text-5xl md:text-6xl font-bold mb-8">
-                💬 <span className="text-gradient">Depoimentos</span>
+                <span className="text-gradient">Depoimentos</span>
               </h2>
               <p className="text-xl text-gray-300">
                 Depoimentos de quem experimentou o que fazemos de melhor: resultado.
@@ -495,7 +495,7 @@ const VirtusLanding = () => {
           <div className="max-w-5xl mx-auto text-center">
             <ScrollReveal direction="scale">
               <h2 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
-                📲 <span className="text-white">Seu negócio não precisa de</span><br />
+                <span className="text-white">Seu negócio não precisa de</span><br />
                 <span className="text-gradient">mais uma agência.</span><br />
                 <span className="text-white">Precisa de um</span><br />
                 <span className="text-gradient">parceiro estratégico.</span>
@@ -517,14 +517,14 @@ const VirtusLanding = () => {
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                   <button className="btn-super-primary text-xl px-12 py-6 group">
-                    🔵 Falar com a VirtusSyne
+                    Falar com a VirtusSyne
                     <ArrowRight className="ml-3 transition-transform group-hover:translate-x-2" size={24} />
                   </button>
                 </a>
                 <a href="https://instagram.com/virtussyne" target="_blank" rel="noopener noreferrer">
                   <button className="btn-glass text-xl px-12 py-6 group">
                     <Instagram className="mr-3 group-hover:scale-110 transition-transform" size={24} />
-                    📸 Ver Instagram da VirtusSyne
+                    Ver Instagram da VirtusSyne
                   </button>
                 </a>
               </div>
@@ -541,17 +541,17 @@ const VirtusLanding = () => {
           <div className="max-w-5xl mx-auto text-center">
             <ScrollReveal direction="up">
               <h3 className="text-3xl md:text-4xl font-bold mb-12">
-                🧩 VirtusSyne — Estratégia que vende. Crescimento previsível.
+                VirtusSyne — Estratégia que vende. Crescimento previsível.
               </h3>
             </ScrollReveal>
             
             <ScrollReveal direction="up" delay={200}>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                 {[
-                  { icon: MapPin, text: "📍 Belém - PA" },
-                  { icon: Phone, text: "📱 (91) 98846-8600" },
-                  { icon: Mail, text: "📧 virtussyne@gmail.com" },
-                  { icon: Instagram, text: "📲 @virtussyne" }
+                  { icon: MapPin, text: "Belém - PA" },
+                  { icon: Phone, text: "(91) 98846-8600" },
+                  { icon: Mail, text: "virtussyne@gmail.com" },
+                  { icon: Instagram, text: "@virtussyne" }
                 ].map((contact, index) => (
                   <div key={index} className="card-glass flex items-center p-4 group hover:scale-105 transition-transform">
                     <contact.icon className="mr-3 group-hover:scale-110 transition-transform" size={20} />
@@ -564,7 +564,7 @@ const VirtusLanding = () => {
             <ScrollReveal direction="up" delay={400}>
               <div className="pt-8 border-t border-white/20">
                 <p className="text-sm text-white/70">
-                  🧾 CNPJ: 59.165.836/0001-99
+                  CNPJ: 59.165.836/0001-99
                 </p>
               </div>
             </ScrollReveal>
