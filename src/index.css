@@ -1,42 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* VirtusSyne Design System - Performance-focused colors and styles */
 
 @layer base {
   :root {
+    /* VirtusSyne Brand Colors */
+    --primary: 198 51% 20%; /* #193D50 - Azul Escuro */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 198 35% 37%; /* #3C6C80 - Azul Médio */
+    --secondary-foreground: 0 0% 100%;
+    
+    --accent: 201 3% 58%; /* #939598 - Cinza Neutro */
+    --accent-foreground: 0 0% 100%;
+    
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 198 51% 20%;
+    
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --card-foreground: 198 51% 20%;
+    
+    --muted: 201 10% 95%;
+    --muted-foreground: 201 3% 58%;
+    
+    --border: 201 10% 90%;
+    --input: 201 10% 90%;
+    --ring: 198 35% 37%;
+    
+    /* Performance gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+    --gradient-accent: linear-gradient(90deg, hsl(var(--secondary)), hsl(var(--accent)));
+    
+    /* Shadows for elevation */
+    --shadow-performance: 0 10px 40px -10px hsl(var(--primary) / 0.3);
+    --shadow-card: 0 4px 20px -4px hsl(var(--primary) / 0.15);
+    --shadow-button: 0 4px 15px -3px hsl(var(--primary) / 0.4);
+    
+    /* Animation variables */
+    --animation-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +109,108 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  /* Button variants for VirtusSyne */
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-secondary text-primary-foreground px-8 py-4 rounded-lg font-semibold
+           transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1 hover:scale-105;
+    box-shadow: var(--shadow-button);
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold
+           transition-all duration-300 hover:bg-primary hover:text-primary-foreground 
+           hover:shadow-lg transform hover:-translate-y-1;
+  }
+  
+  .btn-whatsapp {
+    @apply bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold
+           transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1;
+  }
+  
+  /* Card styles */
+  .performance-card {
+    @apply bg-card border border-border rounded-xl p-6 transition-all duration-300
+           hover:shadow-lg hover:-translate-y-2;
+    box-shadow: var(--shadow-card);
+  }
+  
+  /* Section backgrounds */
+  .section-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  .section-accent {
+    @apply bg-muted;
+  }
+  
+  /* Animation utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+  
+  .hover-lift {
+    transition: var(--animation-smooth);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-performance);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Floating WhatsApp button styles */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
   }
 }
