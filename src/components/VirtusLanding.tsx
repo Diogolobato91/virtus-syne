@@ -119,7 +119,7 @@ const VirtusLanding = () => {
             <ScrollReveal direction="up" delay={1000}>
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <button className="btn-super-primary text-xl px-10 py-5 group">
+                  <button className="btn-super-primary text-xl px-10 py-5 group flex items-center justify-center">
                     Quero escalar com estratégia
                     <ArrowRight className="ml-3 transition-transform group-hover:translate-x-2" size={20} />
                   </button>
@@ -186,9 +186,9 @@ const VirtusLanding = () => {
                 <p className="text-xl font-semibold mb-6 text-white">
                   Não atendemos em volume.
                 </p>
-                <p className="text-2xl font-bold text-primary-light">
-                  Atendemos com profundidade.
-                </p>
+                 <p className="text-2xl font-bold text-white">
+                   Atendemos com profundidade.
+                 </p>
               </div>
             </ScrollReveal>
           </div>
@@ -343,14 +343,14 @@ const VirtusLanding = () => {
                 label: "em faturamento gerado",
                 gradient: "from-green-500 to-emerald-500"
               },
-              { 
-                icon: Users, 
-                number: 20, 
-                suffix: "+", 
-                prefix: "", 
-                label: "empresas atendidas com soluções personalizadas",
-                gradient: "from-blue-500 to-cyan-500"
-              },
+               { 
+                 icon: Users, 
+                 number: 20, 
+                 suffix: "+", 
+                 prefix: "", 
+                 label: "empresas atendidas com soluções personalizadas",
+                 gradient: "from-primary to-secondary"
+               },
               { 
                 icon: Zap, 
                 number: 30, 
@@ -516,13 +516,13 @@ const VirtusLanding = () => {
             <ScrollReveal direction="up" delay={600}>
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <button className="btn-super-primary text-xl px-12 py-6 group">
+                  <button className="btn-super-primary text-xl px-12 py-6 group flex items-center justify-center">
+                    <MessageCircle className="mr-3 group-hover:scale-110 transition-transform" size={24} />
                     Falar com a VirtusSyne
-                    <ArrowRight className="ml-3 transition-transform group-hover:translate-x-2" size={24} />
                   </button>
                 </a>
                 <a href="https://instagram.com/virtussyne" target="_blank" rel="noopener noreferrer">
-                  <button className="btn-glass text-xl px-12 py-6 group">
+                  <button className="btn-glass text-xl px-12 py-6 group flex items-center justify-center">
                     <Instagram className="mr-3 group-hover:scale-110 transition-transform" size={24} />
                     Ver Instagram da VirtusSyne
                   </button>
