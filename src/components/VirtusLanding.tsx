@@ -146,11 +146,8 @@ const VirtusLanding = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <ScrollReveal direction="up">
-              <div className="text-center mb-20">
-                <div className="inline-flex items-center card-glass px-8 py-4 mb-8">
-                  <Zap className="text-white mr-4" size={32} />
-                  <h2 className="text-5xl md:text-6xl font-bold text-gradient">Sobre Nós</h2>
-                </div>
+            <div className="text-center mb-20">
+              <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white">Sobre Nós</h2>
                 
                 <p className="text-2xl md:text-3xl mb-8 text-white font-light leading-relaxed">
                   A VirtusSyne é uma agência estratégica com <span className="text-gradient font-semibold">DNA de performance.</span>
@@ -201,8 +198,8 @@ const VirtusLanding = () => {
         <div className="container mx-auto px-6">
           <ScrollReveal direction="up">
             <div className="text-center mb-20">
-              <h2 className="text-5xl md:text-6xl font-bold mb-8">
-                <span className="text-gradient">Serviços de Alta Performance</span>
+              <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white">
+                Serviços de Alta Performance
               </h2>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
                 Soluções integradas. Execução com método. Resultados com consistência.
@@ -266,8 +263,8 @@ const VirtusLanding = () => {
         <div className="container mx-auto px-6">
           <ScrollReveal direction="up">
             <div className="text-center mb-20">
-              <h2 className="text-5xl md:text-6xl font-bold mb-8">
-                <span className="text-gradient">Nosso Método - As 5 Premissas</span>
+              <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white">
+                Nosso Método - As 5 Premissas
               </h2>
               <p className="text-2xl text-gray-300 mb-4">
                 Da análise profunda à escala. Sem achismos, sem ruído.
@@ -324,8 +321,8 @@ const VirtusLanding = () => {
         <div className="container mx-auto px-6">
           <ScrollReveal direction="up">
             <div className="text-center mb-20">
-              <h2 className="text-5xl md:text-6xl font-bold mb-8">
-                <span className="text-gradient">Resultados Comprovados</span>
+              <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white">
+                Resultados Comprovados
               </h2>
               <p className="text-2xl text-gray-300">
                 Performance real. Negócios em outro patamar.
@@ -370,10 +367,10 @@ const VirtusLanding = () => {
                       end={stat.number}
                       prefix={stat.prefix}
                       suffix={stat.suffix}
-                      className="text-4xl font-bold text-gradient"
+                      className="text-4xl font-bold text-white"
                     />
                   </div>
-                  <p className="text-gray-300">{stat.label}</p>
+                  <p className="text-white">{stat.label}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -434,8 +431,8 @@ const VirtusLanding = () => {
         <div className="container mx-auto px-6">
           <ScrollReveal direction="up">
             <div className="text-center mb-20">
-              <h2 className="text-5xl md:text-6xl font-bold mb-8">
-                <span className="text-gradient">Depoimentos</span>
+              <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white">
+                Depoimentos
               </h2>
               <p className="text-xl text-gray-300">
                 Depoimentos de quem experimentou o que fazemos de melhor: resultado.
