@@ -79,7 +79,7 @@ const VirtusLanding = () => {
                 <span className="text-white">Crescimento</span>
                 <span className="text-white block">previsível.</span>
                 <span className="text-white">Estratégia</span>
-                <span className="text-white">sob medida.</span>
+                <span className="text-white"> sob medida.</span>
               </h1>
             </ScrollReveal>
             
