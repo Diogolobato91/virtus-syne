@@ -71,11 +71,11 @@ const VirtusLanding = () => {
       <section id="hero" className="hero-3d min-h-screen flex items-center relative overflow-hidden">
         <HeroFloatingElements />
         
-        <div className="container mx-auto px-6 py-20 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 py-16 sm:py-20 relative z-10">
           <div className="max-w-6xl mx-auto">
             
             <ScrollReveal direction="up" delay={400}>
-              <h1 className="text-6xl md:text-8xl font-black mb-8 leading-tight text-center">
+              <h1 className="text-4xl sm:text-6xl md:text-8xl font-black mb-6 sm:mb-8 leading-tight text-center">
                 <span className="text-white">Crescimento</span>
                 <span className="text-white block">previsível.</span>
                 <span className="text-white">Estratégia</span>
@@ -84,8 +84,8 @@ const VirtusLanding = () => {
             </ScrollReveal>
             
             <ScrollReveal direction="up" delay={600}>
-              <div className="max-w-4xl mx-auto text-center mb-12">
-                <p className="text-2xl md:text-3xl mb-8 text-white font-light leading-relaxed">
+              <div className="max-w-4xl mx-auto text-center mb-8 sm:mb-12 px-4">
+                <p className="text-lg sm:text-2xl md:text-3xl mb-6 sm:mb-8 text-white font-light leading-relaxed">
                   Na VirtusSyne, <span className="text-white font-semibold">performance não é promessa</span> — é método.
                 </p>
                 
@@ -132,13 +132,13 @@ const VirtusLanding = () => {
       </section>
 
       {/* SOBRE NÓS SECTION - ENHANCED */}
-      <section id="sobre" className="py-32 relative">
+      <section id="sobre" className="py-20 sm:py-32 relative">
         <SectionFloatingElements />
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
             <ScrollReveal direction="up">
-            <div className="text-center mb-20">
-              <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white">Sobre Nós</h2>
+            <div className="text-center mb-16 sm:mb-20">
+              <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 sm:mb-8 text-white">Sobre Nós</h2>
                 
                 <p className="text-2xl md:text-3xl mb-8 text-white font-light leading-relaxed">
                   A VirtusSyne é uma agência estratégica com <span className="text-gradient font-semibold">DNA de performance.</span>
@@ -152,7 +152,7 @@ const VirtusLanding = () => {
               </div>
             </ScrollReveal>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-16">
               {[
                 { icon: Shield, title: "Planejamento estratégico", desc: "Base sólida para crescimento" },
                 { icon: Target, title: "Tráfego pago com inteligência", desc: "Investimento que retorna vendas" },
@@ -184,9 +184,9 @@ const VirtusLanding = () => {
       </section>
 
       {/* SERVIÇOS SECTION - ENHANCED */}
-      <section id="servicos" className="py-32 relative bg-gradient-to-br from-background/50 to-card/50">
+      <section id="servicos" className="py-20 sm:py-32 relative bg-gradient-to-br from-background/50 to-card/50">
         <SectionFloatingElements variant="secondary" />
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4 sm:px-6">
           <ScrollReveal direction="up">
             <div className="text-center mb-20">
               <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white">
@@ -198,7 +198,7 @@ const VirtusLanding = () => {
             </div>
           </ScrollReveal>
           
-          <div className="grid lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 max-w-7xl mx-auto">
             {[
               {
                 icon: BarChart3,

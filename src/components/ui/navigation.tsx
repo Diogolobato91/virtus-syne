@@ -37,12 +37,12 @@ const Navigation: React.FC<NavigationProps> = ({ whatsappUrl }) => {
 
   return (
     <nav className="nav-sticky transition-all duration-300 bg-white/95 backdrop-blur-sm shadow-2xl">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <img 
-              src="/lovable-uploads/28c4bc50-bb82-45f1-86af-d5292c5aa473.png" 
+              src="/lovable-uploads/309bec48-8b27-4897-8520-32d0244929ca.png" 
               alt="VirtusSyne Logo" 
               className="h-10 transition-all duration-300 hover:scale-110"
             />
