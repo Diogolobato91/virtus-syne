@@ -36,11 +36,7 @@ const Navigation: React.FC<NavigationProps> = ({ whatsappUrl }) => {
   ];
 
   return (
-    <nav className={`nav-sticky transition-all duration-300 ${
-      isScrolled 
-        ? 'nav-glass shadow-2xl' 
-        : 'bg-transparent'
-    }`}>
+    <nav className="nav-sticky transition-all duration-300 bg-white/95 backdrop-blur-sm shadow-2xl">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -58,7 +54,7 @@ const Navigation: React.FC<NavigationProps> = ({ whatsappUrl }) => {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-foreground hover:text-primary transition-all duration-300 font-medium 
+                className="text-primary hover:text-secondary transition-all duration-300 font-medium 
                          relative group cursor-pointer"
               >
                 {item.label}
@@ -68,13 +64,11 @@ const Navigation: React.FC<NavigationProps> = ({ whatsappUrl }) => {
             ))}
           </div>
 
-          {/* CTA Button - Removed */}
-
           {/* Mobile Menu Button */}
           <div className="lg:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-foreground hover:text-primary transition-colors duration-300"
+              className="text-primary hover:text-secondary transition-colors duration-300"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -92,13 +86,12 @@ const Navigation: React.FC<NavigationProps> = ({ whatsappUrl }) => {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left text-foreground hover:text-primary 
+                className="block w-full text-left text-primary hover:text-secondary 
                          transition-colors duration-300 py-2 font-medium"
               >
                 {item.label}
               </button>
             ))}
-            {/* CTA Button removed from mobile menu */}
           </div>
         </div>
       </div>

@@ -73,29 +73,20 @@ const VirtusLanding = () => {
         
         <div className="container mx-auto px-6 py-20 relative z-10">
           <div className="max-w-6xl mx-auto">
-            <ScrollReveal direction="scale" delay={200}>
-              <div className="text-center mb-12">
-                <img 
-                  src="/lovable-uploads/28c4bc50-bb82-45f1-86af-d5292c5aa473.png" 
-                  alt="VirtusSyne Logo" 
-                  className="h-24 mx-auto mb-8 filter drop-shadow-2xl"
-                />
-              </div>
-            </ScrollReveal>
             
             <ScrollReveal direction="up" delay={400}>
               <h1 className="text-6xl md:text-8xl font-black mb-8 leading-tight text-center">
                 <span className="text-white">Crescimento</span>
-                <span className="text-gradient block">previsível.</span>
+                <span className="text-white block">previsível.</span>
                 <span className="text-white">Estratégia</span>
-                <span className="text-gradient">sob medida.</span>
+                <span className="text-white">sob medida.</span>
               </h1>
             </ScrollReveal>
             
             <ScrollReveal direction="up" delay={600}>
               <div className="max-w-4xl mx-auto text-center mb-12">
                 <p className="text-2xl md:text-3xl mb-8 text-white font-light leading-relaxed">
-                  Na VirtusSyne, <span className="text-gradient font-semibold">performance não é promessa</span> — é método.
+                  Na VirtusSyne, <span className="text-white font-semibold">performance não é promessa</span> — é método.
                 </p>
                 
                 <p className="text-lg md:text-xl mb-12 text-white leading-relaxed">
@@ -166,7 +157,7 @@ const VirtusLanding = () => {
                 { icon: Shield, title: "Planejamento estratégico", desc: "Base sólida para crescimento" },
                 { icon: Target, title: "Tráfego pago com inteligência", desc: "Investimento que retorna vendas" },
                 { icon: Bot, title: "Funis automatizados", desc: "Processo respeitoso e eficiente" },
-                { icon: Video, title: "Criativos internos", desc: "Foco total em conversão" }
+                { icon: Video, title: "Criativos internos - Foco total em conversão", desc: "Produção sob medida que converte" }
               ].map((item, index) => (
                 <ScrollReveal key={index} direction="up" delay={index * 200}>
                   <div className="card-3d text-center group">
@@ -245,7 +236,7 @@ const VirtusLanding = () => {
                     {service.description}
                   </p>
                   
-                  <div className="card-glass p-4 text-center group-hover:bg-white/20 transition-colors">
+                  <div className="card-glass p-4 text-center transition-colors">
                     <p className="font-semibold text-white">
                       {service.highlight}
                     </p>
@@ -290,7 +281,7 @@ const VirtusLanding = () => {
                       <div className="bg-gradient-to-r from-primary to-secondary text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-2xl mr-8 group-hover:scale-110 transition-transform">
                         {step.number}
                       </div>
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full blur opacity-50 group-hover:opacity-75 transition-opacity"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full blur opacity-20 group-hover:opacity-30 transition-opacity"></div>
                     </div>
                     
                     <div className="flex-1 flex items-center">
@@ -475,7 +466,7 @@ const VirtusLanding = () => {
                   
                   <div className="card-glass p-4">
                     <p className="font-bold text-white">{testimonial.author}</p>
-                    <p className="text-sm text-gradient">{testimonial.company}</p>
+                    <p className="text-sm text-white">{testimonial.company}</p>
                   </div>
                 </div>
               </ScrollReveal>
@@ -491,12 +482,12 @@ const VirtusLanding = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
             <ScrollReveal direction="scale">
-              <h2 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
-                <span className="text-white">Seu negócio não precisa de</span><br />
-                <span className="text-gradient">mais uma agência.</span><br />
-                <span className="text-white">Precisa de um</span><br />
-                <span className="text-gradient">parceiro estratégico.</span>
-              </h2>
+               <h2 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
+                 <span className="text-white">Seu negócio não precisa de</span><br />
+                 <span className="text-white">mais uma agência.</span><br />
+                 <span className="text-white">Precisa de um</span><br />
+                 <span className="text-white">parceiro estratégico.</span>
+               </h2>
             </ScrollReveal>
             
             <ScrollReveal direction="up" delay={400}>
