@@ -141,8 +141,7 @@ const VirtusLanding = () => {
               <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 sm:mb-8 text-white">Sobre Nós</h2>
                 
                 <p className="text-2xl md:text-3xl mb-8 text-white font-light leading-relaxed">
-                  A VirtusSyne é uma agência estratégica com <span className="text-gradient font-semibold">DNA de performance.</span>
-                </p>
+                  A VirtusSyne é uma agência estratégica com DNA de performance.</p>
                 
                 <p className="text-xl mb-16 leading-relaxed text-white max-w-4xl mx-auto">
                   Trabalhamos com empresas e profissionais que sabem onde querem chegar — e buscam um parceiro que saiba como levá-los.
