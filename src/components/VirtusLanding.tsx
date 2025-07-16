@@ -54,7 +54,7 @@ const VirtusLanding = () => {
   return (
     <div className="min-h-screen bg-animated">
       {/* Navigation */}
-      <Navigation whatsappUrl={whatsappUrl} />
+      <Navigation />
 
       {/* Enhanced WhatsApp Float */}
       <a 
@@ -98,7 +98,7 @@ const VirtusLanding = () => {
                   Na VirtusSyne, <span className="text-gradient font-semibold">performance não é promessa</span> — é método.
                 </p>
                 
-                <p className="text-lg md:text-xl mb-12 text-gray-300 leading-relaxed">
+                <p className="text-lg md:text-xl mb-12 text-white leading-relaxed">
                   Com tráfego pago inteligente, automações personalizadas e criativos feitos sob medida, 
                   ajudamos negócios prontos para o próximo nível a crescer com consistência.
                 </p>
@@ -108,7 +108,7 @@ const VirtusLanding = () => {
             <ScrollReveal direction="up" delay={800}>
               <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-12">
                 <div className="card-glass flex items-center px-6 py-4">
-                  <Target className="text-white mr-4" size={24} />
+                  <Star className="text-white mr-4" size={24} />
                   <span className="text-lg font-semibold text-white">
                     Atuamos com poucos clientes por vez, porque excelência exige foco.
                   </span>
@@ -124,7 +124,7 @@ const VirtusLanding = () => {
                     <ArrowRight className="ml-3 transition-transform group-hover:translate-x-2" size={20} />
                   </button>
                 </a>
-                <button className="btn-glass text-xl px-10 py-5 group">
+                <button className="btn-glass text-xl px-10 py-5 group flex items-center">
                   <PlayCircle className="mr-3" size={20} />
                   Entenda nosso processo
                 </button>
@@ -153,7 +153,7 @@ const VirtusLanding = () => {
                   A VirtusSyne é uma agência estratégica com <span className="text-gradient font-semibold">DNA de performance.</span>
                 </p>
                 
-                <p className="text-xl mb-16 leading-relaxed text-gray-300 max-w-4xl mx-auto">
+                <p className="text-xl mb-16 leading-relaxed text-white max-w-4xl mx-auto">
                   Trabalhamos com empresas e profissionais que sabem onde querem chegar — e buscam um parceiro que saiba como levá-los.
                   <br /><br />
                   Não existe "receita pronta". Cada projeto nasce de uma imersão real no seu negócio e se transforma em uma operação personalizada de vendas online.
@@ -172,7 +172,7 @@ const VirtusLanding = () => {
                   <div className="card-3d text-center group">
                     <item.icon className="text-white mx-auto mb-6 group-hover:scale-110 transition-transform" size={48} />
                     <h3 className="font-bold text-xl mb-3 text-white">{item.title}</h3>
-                    <p className="text-gray-300 text-sm">{item.desc}</p>
+                    <p className="text-white text-sm">{item.desc}</p>
                   </div>
                 </ScrollReveal>
               ))}
@@ -245,8 +245,8 @@ const VirtusLanding = () => {
                     {service.description}
                   </p>
                   
-                  <div className="card-glass p-4 text-center">
-                    <p className="font-semibold text-gradient">
+                  <div className="card-glass p-4 text-center group-hover:bg-white/20 transition-colors">
+                    <p className="font-semibold text-white">
                       {service.highlight}
                     </p>
                   </div>

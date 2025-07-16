@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, MessageCircle } from 'lucide-react';
 
 interface NavigationProps {
-  whatsappUrl: string;
+  whatsappUrl?: string;
 }
 
 const Navigation: React.FC<NavigationProps> = ({ whatsappUrl }) => {
@@ -68,18 +68,7 @@ const Navigation: React.FC<NavigationProps> = ({ whatsappUrl }) => {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden lg:block">
-            <a 
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-super-primary text-sm"
-            >
-              <MessageCircle size={16} className="mr-2" />
-              Falar Agora
-            </a>
-          </div>
+          {/* CTA Button - Removed */}
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden">
@@ -109,17 +98,7 @@ const Navigation: React.FC<NavigationProps> = ({ whatsappUrl }) => {
                 {item.label}
               </button>
             ))}
-            <div className="pt-4">
-              <a 
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-super-primary text-sm w-full justify-center"
-              >
-                <MessageCircle size={16} className="mr-2" />
-                Falar Agora
-              </a>
-            </div>
+            {/* CTA Button removed from mobile menu */}
           </div>
         </div>
       </div>
