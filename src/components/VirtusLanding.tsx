@@ -78,8 +78,8 @@ const VirtusLanding = () => {
               <h1 className="text-4xl sm:text-6xl md:text-8xl font-black mb-6 sm:mb-8 leading-tight text-center">
                 <span className="text-white">Crescimento</span>
                 <span className="text-white block">previsível.</span>
-                <span className="text-white">Estratégia</span>
-                <span className="text-white"> sob medida.</span>
+                <span className="text-white">Estratégia sob medida.</span>
+                
               </h1>
             </ScrollReveal>
             
