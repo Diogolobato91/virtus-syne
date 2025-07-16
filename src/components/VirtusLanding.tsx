@@ -295,7 +295,7 @@ const VirtusLanding = () => {
             <ScrollReveal direction="scale" delay={1000}>
               <div className="text-center mt-16">
                 <div className="card-glass inline-block px-8 py-6">
-                  <p className="text-xl font-bold text-gradient">
+                  <p>
                     Cada passo tem método. Cada decisão, base.
                   </p>
                 </div>
