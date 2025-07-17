@@ -403,7 +403,7 @@ const VirtusLanding = () => {
                       {caseStudy.description}
                     </p>
                     <div className="card-glass p-3">
-                      <p className="text-sm font-semibold text-gradient">
+                      <p className="text-sm font-semibold text-white hover:text-primary transition-colors duration-300">
                         {caseStudy.highlight}
                       </p>
                     </div>
